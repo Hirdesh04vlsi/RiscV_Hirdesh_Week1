@@ -48,36 +48,6 @@ A **simulator** models how a digital circuit behaves, without needing to fabrica
 
 ## 3. 🧪 Lab 1 — Setup
 
-### Create working directory
-
-```bash
-mkdir vlsi
-cd vlsi
-```
-
-### Install & Run VSDflow
-
-```bash
-sudo apt-get install git
-git clone https://github.com/kunalg123/vsdflow.git
-cd vsdflow
-chmod 777 opensource_eda_tool_install.sh
-./opensource_eda_tool_install.sh
-```
-
-Run examples:
-
-```bash
-./vsdflow spi_slave_design_details.csv
-./vsdflow picorv32_design_details.csv
-```
-
-### Clone SKY130 Workshop Repo
-
-```bash
-git clone https://github.com/kunalg123/sky130RTLDesignAndSynthesisWorkshop.git
-```
-
 **Directory Structure**
 
 ```
@@ -124,6 +94,8 @@ gvim good_mux.v -o tb_good_mux.v
 ```
 <img width="1174" height="1003" alt="Screenshot 2025-09-21 233426" src="https://github.com/user-attachments/assets/154cc9b2-9160-44b8-b0d4-ff12fe3fc725" />
 
+
+---
 
 ## 5. 🔧 Yosys & Logic Synthesis
 
@@ -247,4 +219,5 @@ Thankful to **Kunal Ghosh** & Team **VLSI System Design (VSD)** for designing th
 **Hirdesh**
 @hirdeshpamani2@gmail.com
 *VLSI Learner & Enthusiast*
+
 
