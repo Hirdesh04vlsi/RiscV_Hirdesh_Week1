@@ -1,3 +1,4 @@
+```bash
 yosys
 read_liberty -lib ../path/lib
 read_verilog good_mux.v
@@ -8,3 +9,4 @@ write_verilog good_mux.netlist.v
 !gvim good_mux_netlist.v
 write_verilog -noattr good_mux_netlist.v
 !gvim good_mux_netlist.v
+```
