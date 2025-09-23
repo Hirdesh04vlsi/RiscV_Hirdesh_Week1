@@ -22,7 +22,7 @@ It describes the logical and timing characteristics of every gate/cell available
 - **Naming convention example:**
 ```
 
-sky130\_fd\_sc\_hd\_\_tt\_025C\_1v80.lib
+sky130_fd_sc_hd__tt_025C_1v80.lib
 
 ````
 - `sky130_fd_sc_hd` → technology and library name (Sky130, Foundry Digital, High Density)  
@@ -66,8 +66,11 @@ Designers must ensure **timing closure** across these.
 
 **Lab Work:**
 ---
+## 🧪 Labs
 
-- File: `multiple_modules.v`
+- [Hierarchical vs Flat Synthesis (with Submodule Synthesis)](./Hierarchical%20vs%20Flat%20lab.md)
+
+- File: `multiple_modules.v
 - Commands used:
 ```tcl
 read_liberty <.lib>
@@ -174,5 +177,6 @@ One of the strengths of synthesis tools is **optimization**.
 VLSI Enthusiast | RTL to GDS Learner | Open-Source EDA Explorer 🚀
 
 ```
+
 
 
