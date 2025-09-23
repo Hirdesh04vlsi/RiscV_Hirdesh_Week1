@@ -31,6 +31,7 @@ sky130\_fd\_sc\_hd\_\_tt\_025C\_1v80.lib
 - `1v80` → supply voltage (1.8 V)
 
 So this file is basically the **dictionary** the synthesis tool uses to translate RTL into gates.
+<img width="960" height="1079" alt="Screenshot 2025-09-24 005528" src="https://github.com/user-attachments/assets/fd1be931-f6a4-44f0-9fff-74b1866c321c" />
 
 ---
 
@@ -64,6 +65,8 @@ Designers must ensure **timing closure** across these.
 - Results in better optimization, but harder to debug.
 
 **Lab Work:**
+---
+
 - File: `multiple_modules.v`
 - Commands used:
 ```tcl
@@ -171,4 +174,5 @@ One of the strengths of synthesis tools is **optimization**.
 VLSI Enthusiast | RTL to GDS Learner | Open-Source EDA Explorer 🚀
 
 ```
+
 
