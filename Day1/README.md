@@ -46,58 +46,11 @@ A **simulator** models how a digital circuit behaves, without needing to fabrica
 
 ---
 
-## 3. 🧪 Lab 1 — Setup
-
-**Directory Structure**
-
-```
-sky130RTLDesignAndSynthesisWorkshop/
-  ├── DC_WORKSHOP
-  ├── lib           # Standard cell libraries (.lib)
-  ├── my_lib        # Custom/target libraries
-  ├── verilog_files # RTL sources + testbenches
-  ├── yosys_run.sh
-  └── README.md
-```
-<img width="1919" height="1032" alt="Screenshot 2025-09-21 232034" src="https://github.com/user-attachments/assets/60d1ba01-b94e-4a47-a3e3-61929255e46e" />
 
 ---
 
-## 4. 🧪 Lab 2 — RTL Simulation
 
-**Example: `good_mux`**
-
-```bash
-# Compile RTL + TB
-iverilog good_mux.v tb_good_mux.v
-
-# Run simulation
-./a.out
-
-# View waveform
-gtkwave tb_good_mux.vcd
-```
-<img width="1919" height="454" alt="Screenshot 2025-09-21 233132" src="https://github.com/user-attachments/assets/58eecbf9-7544-46f2-8a6f-face6578caf5" />
-
-Steps in GTKWave:
-<img width="991" height="639" alt="Screenshot 2025-09-21 233102" src="https://github.com/user-attachments/assets/f539a8ab-8f6e-4156-aef9-937dbe40e994" />
-
-1. Define UUT (Unit Under Test).
-2. Add signals of interest.
-3. Observe mux functionality in waveform.
-
----
-View Verilog codes.
-
-```bash
-gvim good_mux.v -o tb_good_mux.v
-```
-<img width="1174" height="1003" alt="Screenshot 2025-09-21 233426" src="https://github.com/user-attachments/assets/154cc9b2-9160-44b8-b0d4-ff12fe3fc725" />
-
-
----
-
-## 5. 🔧 Yosys & Logic Synthesis
+## 3. 🔧 Yosys & Logic Synthesis
 
 ### 🔹 What is Yosys?
 
@@ -127,72 +80,12 @@ gvim good_mux.v -o tb_good_mux.v
 
 ---
 
-## 6. 🧪 Lab 3 — Yosys Flow
 
-```bash
-yosys
-```
-<img width="1060" height="609" alt="Screenshot 2025-09-19 013924" src="https://github.com/user-attachments/assets/a1e03136-f1db-417e-b921-be0493e08a41" />
+## 🧪 Day 1 Labs
 
-Enter yosys shell.
-
-```bash
-read_liberty -lib ../path/lib
-```
-<img width="714" height="230" alt="Screenshot 2025-09-22 001003" src="https://github.com/user-attachments/assets/e6a3300b-f56d-4029-8457-6509b0b746cf" />
-
-Read standard cell library.
-
-```bash
-read_verilog good_mux.v
-```
-
-Load RTL design.
-
-```bash
-synth -top good_mux
-```
-<img width="961" height="639" alt="Screenshot 2025-09-22 001107" src="https://github.com/user-attachments/assets/17988928-2f0f-4b5b-a7f0-4584699aeb89" />
-
-Run synthesis with `good_mux` as top module.
-
-```bash
-abc -liberty ../path/lib
-```
-
-Technology mapping: assign logic to actual cells.
-
-```bash
-show
-```
-<img width="958" height="1079" alt="Screenshot 2025-09-22 001321" src="https://github.com/user-attachments/assets/82f64aa0-34a1-4877-aa7a-5a2f5339108a" />
-Visual schematic of synthesized design.
-
-```bash
-write_verilog good_mux.netlist.v
-```
-
-Write synthesized netlist (with attributes).
-
-```bash
-!gvim good_mux_netlist.v
-```
-<img width="1093" height="1079" alt="Screenshot 2025-09-22 002957" src="https://github.com/user-attachments/assets/201d479a-bcf6-4d31-a713-07c729df4a7d" />
-
-Open netlist in `gvim`.
-
-```bash
-write_verilog -noattr good_mux_netlist.v
-```
-
-Write netlist without synthesis attributes.
-
-```bash
-!gvim good_mux_netlist.v
-```
-<img width="757" height="1079" alt="Screenshot 2025-09-22 003350" src="https://github.com/user-attachments/assets/979c90c2-ec94-4b29-b6e5-1abf9f747e6a" />
-
-View clean netlist.
+- [Lab 1: Tool Installation](./LAB%201%20Tool%20installation.md)  
+- [Lab 2: Icarus Verilog + GTKWave](./LAB%202%20iverilog_gtkwave.md)  
+- [Lab 3: Yosys Basics](./LAB%203%20Yosys.md)  
 
 ---
 
