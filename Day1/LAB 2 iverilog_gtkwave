@@ -1,4 +1,0 @@
-$ iverilog good_mux.v tb_good_mux.v
-$ ./a.out
-$ gtkwave tb_good_mux.vcd
-$ gvim good_mux.v -o tb_good_mux.v
