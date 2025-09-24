@@ -134,7 +134,8 @@ Types studied:
 
  ### 🧪 Lab 5 Flow
 
-- [Lab 5: Flip-Flops (Async Reset, Async Set, Sync Reset)](Day2/D_Flip%20Flop%20Lab.md)  
+[Lab 5: Flip-Flops (Async Reset, Async Set, Sync Reset)](Day2/D_Flip%20Flop%20Lab.md)
+
 
 1. Simulate using Icarus Verilog + GTKWave:
 
@@ -174,7 +175,8 @@ Yosys can detect simple arithmetic patterns and replace them with efficient wiri
 ---
 
 ### 🧪 Lab 6 Flow
-- [Lab 6: Multiplication Optimization](Day2/Multiplication%20Optimization%20Lab.md)  
+[Lab 6: Multiplication Optimization](Day2/Multiplication%20Optimization%20Lab.md)
+ 
 
   ```tcl
    read_liberty <.lib>
@@ -197,6 +199,7 @@ Yosys can detect simple arithmetic patterns and replace them with efficient wiri
 
 **Hirdesh**
 VLSI Enthusiast | RTL to GDS Learner | Open-Source EDA Explorer 🚀
+
 
 
 
