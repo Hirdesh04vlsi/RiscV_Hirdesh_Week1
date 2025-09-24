@@ -64,7 +64,7 @@ Designers must ensure **timing closure** across these.
 - The tool sees everything at once → can optimize across module boundaries.
 - Results in better optimization, but harder to debug.
 
-**Lab Work:**
+**Lab 4 Work:**
 ---
 ## 🧪 Labs
 
@@ -127,7 +127,9 @@ Types studied:
 * `dff_async_set.v` → DFF with asynchronous set.
 * `dff_syncres.v` → DFF with synchronous reset.
 
-**Lab Flow:**
+**Lab 5 Flow:**
+
+- [D Flip-Flop Lab (Async Reset, Async Set, Sync Reset)](./D_FlipFlop_Lab.md)
 
 1. Simulate using Icarus Verilog + GTKWave:
 
@@ -148,20 +150,26 @@ Types studied:
    ```
 
 ---
-
 ### 🔹 Optimizations in Yosys
 
-One of the strengths of synthesis tools is **optimization**.
+One of the strengths of synthesis tools is **optimization**.  
+Yosys can detect simple arithmetic patterns and replace them with efficient wiring or logic.
 
-* Example 1: Multiplication by 2 (`mult_2.v`)
+* **Example 1: Multiplication by 2 (`mult_2.v`)**
+  * Instead of a real multiplier, Yosys implements a **bit shift**:  
+    `y = {a, 1'b0}`
 
-  * Instead of a real multiplier, yosys implements a **bit shift**: `y = {a, 0}`
-* Example 2: Multiplication by 8 (`mult_8.v`)
+* **Example 2: Multiplication by 9 (`mult_8.v`)**
+  * Code used concatenation: `y = {a, a}`  
+  * This is equivalent to `(a << 3) + a = a * 9`  
+  * Yosys implements this as **shift + add**, not a full multiplier.
 
-  * Similarly → shift left by 3: `y = {a, 000}`
-* No complex multiplier hardware is created → **area and power savings**.
+✅ Result → No complex multiplier hardware is created → **area and power savings**.
 
 ---
+
+### 🧪 Lab 6 Flow
+
 
 ## 📂 Files
 
@@ -177,6 +185,7 @@ One of the strengths of synthesis tools is **optimization**.
 VLSI Enthusiast | RTL to GDS Learner | Open-Source EDA Explorer 🚀
 
 ```
+
 
 
 
