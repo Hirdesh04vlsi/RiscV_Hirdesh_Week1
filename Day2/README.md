@@ -63,10 +63,11 @@ Designers must ensure **timing closure** across these.
 - All modules are flattened into a single netlist.
 - The tool sees everything at once → can optimize across module boundaries.
 - Results in better optimization, but harder to debug.
-
+- 
+## 🧪 Labs
 **Lab 4 Work:**
 ---
-## 🧪 Labs
+
 
 - [Hierarchical vs Flat Synthesis (with Submodule Synthesis)](./Hierarchical%20vs%20Flat%20lab.md)
 
@@ -127,7 +128,11 @@ Types studied:
 * `dff_async_set.v` → DFF with asynchronous set.
 * `dff_syncres.v` → DFF with synchronous reset.
 
-**Lab 5 Flow:**
+
+---
+
+
+ ### 🧪 Lab 5 Flow
 
 - [D Flip-Flop Lab (Async Reset, Async Set, Sync Reset)](./D_FlipFlop_Lab.md)
 
@@ -169,7 +174,16 @@ Yosys can detect simple arithmetic patterns and replace them with efficient wiri
 ---
 
 ### 🧪 Lab 6 Flow
+- [🔹 Multiplication Optimization Lab](Day2/Multiplication_Optimization_Lab.md)
 
+  ```tcl
+   read_liberty <.lib>
+   read_verilog mult_2.v
+   synth -top mult_2
+   abc -liberty <.lib>
+   show
+   ```
+  
 
 ## 📂 Files
 
@@ -183,9 +197,6 @@ Yosys can detect simple arithmetic patterns and replace them with efficient wiri
 
 **Hirdesh**
 VLSI Enthusiast | RTL to GDS Learner | Open-Source EDA Explorer 🚀
-
-```
-
 
 
 
