@@ -1,4 +1,4 @@
-# Sequential Optimization Lab
+# 🧪 Lab: Sequential Optimization 
 
 We analyze **D flip-flops with constant inputs** (`dff_const4` and `dff_const5`) and compare **RTL vs synthesized netlists**. Simulation uses **Icarus Verilog** + **GTKWave**, and synthesis uses **Yosys** with **dfflibmap**.
 
