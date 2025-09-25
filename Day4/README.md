@@ -58,7 +58,8 @@ $ gtkwave dump.vcd
 
 # 🧪 Labs — Day 4
 
-## **[Lab GLS](./Lab%20GLS(gate%20level%20simulaton.md)**
+[Lab GLS (Gate-Level Simulation)](./Lab%20GLS%20(gate%20level%20simulation).md)
+
 
 **What was done:**
 
@@ -67,7 +68,8 @@ $ gtkwave dump.vcd
 
 ---
 
-## **[Lab Synthesis Simulation Mismatch (Missing Sensitivity List)](./Lab%20Synthesis%20Simulation%20Mismatch%20(Missing%20Sensitivity%20List.md)**
+[Lab (Missing Sensitivity List) Synthesis Simulation Mismatch](./Lab%20(Missing%20Sensitivity%20List)%20Synthesis%20Simulation%20Mismatch.md)
+
 
 **What was done:**
 
@@ -77,7 +79,8 @@ $ gtkwave dump.vcd
 
 ---
 
-## **[Lab Synthesis Simulation Mismatch (Blocking/Non-Blocking Statements)](./Lab%20Synthesis%20Simulation%20Mismatch%20(Blocking_Non-Blocking%20Statements.md)**
+[Lab (Blocking vs Non-Blocking Statements) Synthesis Simulation Mismatch](./Lab%20(Blocking%20vs%20Non-Blocking%20Statements)%20Synthesis%20Simulation%20Mismatch.md)
+
 
 **What was done:**
 
@@ -99,5 +102,6 @@ $ gtkwave dump.vcd
    * Blocking/non-blocking mismatch (`blocking_caveat.v`)
 
 ---
+
 
 
