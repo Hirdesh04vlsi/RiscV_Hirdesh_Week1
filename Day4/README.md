@@ -68,7 +68,8 @@ $ gtkwave dump.vcd
 
 ---
 
-[Lab (Missing Sensitivity List) Synthesis Simulation Mismatch](./Lab%20(Missing%20Sensitivity%20List)%20Synthesis%20Simulation%20Mismatch.md)
+[Lab (Missing Sensitivity List) Synthesis Simulation Mismatch](./Day4/Lab%20%28Missing%20Sensitivity%20List%29%20Synthesis%20Simulation%20Mismatch.md)
+
 
 
 **What was done:**
@@ -102,6 +103,7 @@ $ gtkwave dump.vcd
    * Blocking/non-blocking mismatch (`blocking_caveat.v`)
 
 ---
+
 
 
 
