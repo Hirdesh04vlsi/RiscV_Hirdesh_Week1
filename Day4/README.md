@@ -20,6 +20,12 @@
 2. Simulate the **same testbench**, using the netlist as DUT.
 3. Observe waveforms in **GTKWave**.
 
+
+```bash
+$ iverilog ../my_lib/verilog_model/primitives.v ../my_lib/verilog_model/sky130_fd_sc_hd.v file.v tb_file.v
+$ ./a.out
+$ gtkwave dump.vcd
+```
 ---
 
 ## Synthesis-Simulation Mismatch
@@ -93,3 +99,4 @@
    * Blocking/non-blocking mismatch (`blocking_caveat.v`)
 
 ---
+
