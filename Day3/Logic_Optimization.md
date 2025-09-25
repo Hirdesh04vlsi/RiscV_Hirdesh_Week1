@@ -1,6 +1,18 @@
 
 # 📘 VLSI Learning Notes — Day 3
 
+## 📂 Folder Structure (Day 3)
+
+```
+Day3/
+ ├── Lab Combinational optimization.md
+ ├── Lab Sequential optimization.md
+ ├── Lab Unused output optimization.md
+ └── Logic_Optimization.md
+```
+
+
+
 ## 🔹 Logic Optimization
 
 **Logic Optimization** is the process of transforming a digital circuit into a more efficient version without changing its functionality.
@@ -83,12 +95,3 @@ When only part of the output is required, synthesis automatically removes unused
 
 ---
 
-## 📂 Folder Structure (Day 3)
-
-```
-Day3/
- ├── Lab Combinational optimization.md
- ├── Lab Sequential optimization.md
- ├── Lab Unused output optimization.md
- └── Logic_Optimization.md
-```
