@@ -1,6 +1,6 @@
 
 
-# Unused Output Optimization Lab
+# 🧪 Lab: Unused Output Optimization Lab
 
 This lab demonstrates **unused output optimization** in Verilog synthesis. Two counters were analyzed:
 
