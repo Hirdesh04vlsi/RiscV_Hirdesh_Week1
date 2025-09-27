@@ -1,16 +1,19 @@
 
 
-# VSD RISC-V Silicon to Tapeout – Week 1 Summary
+# ![RISC-V](https://img.shields.io/badge/RISC--V-VSD-orange) ![Made in India](https://img.shields.io/badge/Made%20in-India-green) ![VSD Workshop](https://img.shields.io/badge/VSD-Workshop-blue) ![RTL](https://img.shields.io/badge/RTL-Design-red) ![Synthesis](https://img.shields.io/badge/Synthesis-Green)
 
-![RISC-V](https://img.shields.io/badge/RISC--V-VSD-orange)![Made in India](https://img.shields.io/badge/Made%20in-India-green)![VSD Workshop](https://img.shields.io/badge/VSD-Workshop-blue)
+# [VSD RISC-V Silicon to Tapeout – Week 1 Summary](./README.md)
 
+This repository contains **Week 1 labs** covering simulation, synthesis, optimization, and sequential/combinational circuits using Verilog HDL.
 
-## Day 1 – Tool Installation & Setup
+---
+
+## [Day 1 – Tool Installation & Setup](./Day1)
 
 **Learnings:**
 
 * Installed and verified **Icarus Verilog, GTKWave, and Yosys**.
-* Learned the basic **simulation and synthesis workflow**.
+* Learned the **simulation and synthesis workflow**.
 
 **Labs:**
 
@@ -22,7 +25,7 @@
 
 ---
 
-## Day 2 – Sequential Circuits & Flip-Flops
+## [Day 2 – Sequential Circuits & Flip-Flops](./Day2)
 
 **Learnings:**
 
@@ -40,7 +43,24 @@
 
 ---
 
-## Day 3 – Gate-Level Simulation & Sensitivity List
+## [Day 3 – Combinational Optimization](./Day3)
+
+**Learnings:**
+
+* Learned how **Yosys optimizes combinational circuits**.
+* Observed **removal of redundant logic** and cleaner netlists.
+
+**Labs:**
+
+* [**Lab 7: Combinational Optimization**](./Day3/LAB%207%20Combinational%20Optimization.md)
+* [**Lab 8: Unused Output Optimization**](./Day3/LAB%208%20Unused%20Output%20Optimization.md)
+* [**Lab 9: Counter Optimization**](./Day3/LAB%209%20Counter%20Optimization.md)
+
+**Observation:** Optimized circuits consume less logic and produce same functionality.
+
+---
+
+## [Day 4 – Gate-Level Simulation & Sensitivity List](./Day4)
 
 **Learnings:**
 
@@ -50,32 +70,15 @@
 
 **Labs:**
 
-* [**Lab 7: Gate-Level Simulation**](./Day3/LAB%207%20GLS.md)
-* [**Lab 8: Missing Sensitivity List**](./Day3/LAB%208%20Missing%20Sensitivity%20List.md)
-* [**Lab 9: Combinational Optimization**](./Day3/LAB%209%20Combinational%20Optimization.md)
+* [**Lab 10: Gate-Level Simulation**](./Day4/LAB%2010%20GLS.md)
+* [**Lab 11: Missing Sensitivity List**](./Day4/LAB%2011%20MSL.md)
+* [**Lab 12: Combinational Optimization**](./Day4/LAB%2012%20Combinational%20Optimization.md)
 
 **Observation:** Gate-level simulation matches RTL; missing sensitivity list can cause mismatches.
 
 ---
 
-## Day 4 – Combinational Optimization
-
-**Learnings:**
-
-* Learned how **Yosys optimizes combinational circuits**.
-* Observed **removal of redundant logic** and cleaner netlists.
-
-**Labs:**
-
-* [**Lab 10: Combinational Optimization (Day4 Part)**](./Day4/LAB%2010%20Combinational%20Optimization.md)
-* [**Lab 11: Unused Output Optimization**](./Day4/LAB%2011%20Unused%20Output%20Optimization.md)
-* [**Lab 12: Counter Optimization**](./Day4/LAB%2012%20Counter%20Optimization.md)
-
-**Observation:** Optimized circuits consume less logic and produce same functionality.
-
----
-
-## Day 5 – If-Else, Case Constructs, and Loops
+## [Day 5 – If-Else, Case Constructs, and Loops](./Day5)
 
 **Learnings:**
 
@@ -89,14 +92,12 @@
 * [**Lab 14: Case Constructs Lab**](./Day5/LAB%2014%20Case%20Constructs.md)
 * [**Lab 15: Loops & Generate Lab**](./Day5/LAB%2015%20Loops%20and%20Generate.md)
 
+**Observations:**
+
+* Incomplete `if` → latch inferred.
+* Complete case → clean mux
+* Incomplete/overlapping case → latch inference & simulation-synthesis mismatch
+* Loops and generate → scalable design, simulation consistent
+
 ---
 
-### Author
-
-Hirdesh Pamnani
-@hirdeshpamani2@gmail.com
-JSS,Noidat year
-
-## Acknowledgment
-
-Special thanks to Kunal Ghosh of VSD for guidance and support throughout the workshop.
