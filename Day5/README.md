@@ -138,7 +138,9 @@ endgenerate
 
 # 5. **Labs Performed**
 
-# (A) Lab Incomplete If
+### (A) Lab Incomplete If
+
+* [**Lab 13: Incomplete If Lab**](./Lab%20Incomplete%20IF.md)
 
 * **Files**: `incomp_if.v`, `incomp_if2.v`
 * **Observation**: Missing else → Latches inferred in synthesis.
@@ -147,6 +149,8 @@ endgenerate
 
 ### (B) Lab incomplete overlapping Case
 
+* [**Lab 14: Incomplete / Overlapping Case Lab**](./Lab%20Incomplete%20Overlapping%20Case.md)
+  
 * **Files**:
 
   * `comp_case.v` → Complete case → Synthesizes to clean mux.
@@ -158,6 +162,8 @@ endgenerate
 
 ### (C) Lab Loops
 
+* [**Lab 15: Loops & Generate Lab**](./Lab%20Loops.md)
+  
 * **Files**:
 
   * `demux_case.v` → Demux using case.
@@ -180,4 +186,5 @@ endgenerate
 * Practiced instantiation of hierarchical modules (`fa`, `rca`).
 
 ---
+
 
