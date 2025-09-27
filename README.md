@@ -32,7 +32,7 @@
 
 **Labs:**
 
-* [**Lab 4: Hierarchical vs Flat Synthesis**](./Day2/Hierarchical_vs_Flat_Synthesis.md)
+* [Lab 4: Hierarchical vs Flat Synthesis](./Hierarchical%20vs%20Flat%20lab.md)  
 * [**Lab 5: Flip-Flops (Async Reset, Async Set, Sync Reset)**](./Day2/D_Flip%20Flop%20Lab.md)
 * [**Lab 6: Multiplication Optimization**](./Day2/Multiplication%20Optimization%20Lab.md)
 
@@ -115,4 +115,5 @@
 Special thanks to **Kunal Ghosh** of **VSD** for guidance and support throughout the workshop.
 
 ---
+
 
