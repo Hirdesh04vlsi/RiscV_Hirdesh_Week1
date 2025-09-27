@@ -1,10 +1,7 @@
 
+# ![RISC-V](https://img.shields.io/badge/RISC--V-VSD-orange) ![Made in India](https://img.shields.io/badge/Made%20in-India-green) ![VSD Workshop](https://img.shields.io/badge/VSD-Workshop-blue) ![RTL](https://img.shields.io/badge/RTL-Design-red) ![Synthesis](https://img.shields.io/badge/Synthesis-Green) ![FPGA](https://img.shields.io/badge/FPGA-Design-purple) ![ASIC](https://img.shields.io/badge/ASIC-Flow-yellow) ![Verilog](https://img.shields.io/badge/Verilog-HDL-blue) ![Simulation](https://img.shields.io/badge/Simulation-✔️-lightgrey) ![Optimization](https://img.shields.io/badge/Optimization-✓-orange)
 
-# ![RISC-V](https://img.shields.io/badge/RISC--V-VSD-orange) ![Made in India](https://img.shields.io/badge/Made%20in-India-green) ![VSD Workshop](https://img.shields.io/badge/VSD-Workshop-blue) ![RTL](https://img.shields.io/badge/RTL-Design-red) ![Synthesis](https://img.shields.io/badge/Synthesis-Green)
-
-# [VSD RISC-V Silicon to Tapeout – Week 1 Summary](./README.md)
-
-This repository contains **Week 1 labs** covering simulation, synthesis, optimization, and sequential/combinational circuits using Verilog HDL.
+# VSD RISC-V Silicon to Tapeout – Week 1 Summary
 
 ---
 
@@ -13,7 +10,7 @@ This repository contains **Week 1 labs** covering simulation, synthesis, optimiz
 **Learnings:**
 
 * Installed and verified **Icarus Verilog, GTKWave, and Yosys**.
-* Learned the **simulation and synthesis workflow**.
+* Learned the basic **simulation and synthesis workflow**.
 
 **Labs:**
 
@@ -52,9 +49,9 @@ This repository contains **Week 1 labs** covering simulation, synthesis, optimiz
 
 **Labs:**
 
-* [**Lab 7: Combinational Optimization**](./Day3/LAB%207%20Combinational%20Optimization.md)
-* [**Lab 8: Unused Output Optimization**](./Day3/LAB%208%20Unused%20Output%20Optimization.md)
-* [**Lab 9: Counter Optimization**](./Day3/LAB%209%20Counter%20Optimization.md)
+* [**Lab: Combinational Optimization**](./Day3/Lab%20Combinational%20optimization.md)
+* [**Lab: Sequential Optimization**](./Day3/Lab%20Sequential%20optimization.md)
+* [**Lab: Unused Output Optimization**](./Day3/Lab%20Unused%20output%20optimization.md)
 
 **Observation:** Optimized circuits consume less logic and produce same functionality.
 
@@ -70,9 +67,9 @@ This repository contains **Week 1 labs** covering simulation, synthesis, optimiz
 
 **Labs:**
 
-* [**Lab 10: Gate-Level Simulation**](./Day4/LAB%2010%20GLS.md)
-* [**Lab 11: Missing Sensitivity List**](./Day4/LAB%2011%20MSL.md)
-* [**Lab 12: Combinational Optimization**](./Day4/LAB%2012%20Combinational%20Optimization.md)
+* [**Lab GLS (Gate-Level Simulation)**](./Day4/Lab%20GLS%20%28gate%20level%20simulation%29.md)
+* [**Lab (Missing Sensitivity List) Synthesis Simulation Mismatch**](./Day4/Lab%20%28Missing%20Sensitivity%20List%29%20Synthesis%20Simulation%20Mismatch.md)
+* [**Lab (Blocking vs Non-Blocking Statements) Synthesis Simulation Mismatch**](./Day4/Lab%20%28Blocking%20vs%20Non-Blocking%20Statements%29%20Synthesis%20Simulation%20Mismatch.md)
 
 **Observation:** Gate-level simulation matches RTL; missing sensitivity list can cause mismatches.
 
@@ -88,16 +85,34 @@ This repository contains **Week 1 labs** covering simulation, synthesis, optimiz
 
 **Labs:**
 
-* [**Lab 13: Incomplete If Lab**](./Day5/LAB%2013%20Incomplete%20If.md)
-* [**Lab 14: Case Constructs Lab**](./Day5/LAB%2014%20Case%20Constructs.md)
-* [**Lab 15: Loops & Generate Lab**](./Day5/LAB%2015%20Loops%20and%20Generate.md)
+
+
+* [**Lab 13: Incomplete If Lab**](./Day5/Lab%20Incomplete%20IF.md)
+* [**Lab 14: Incomplete / Overlapping Case Lab**](./Day5/Lab%20Incomplete%20Overlapping%20Case.md)
+* [**Lab 15: Loops & Generate Lab**](./Day5/Lab%20Loops.md)
+
 
 **Observations:**
 
 * Incomplete `if` → latch inferred.
-* Complete case → clean mux
-* Incomplete/overlapping case → latch inference & simulation-synthesis mismatch
-* Loops and generate → scalable design, simulation consistent
+* Complete case → clean mux.
+* Incomplete/overlapping case → latch inference & simulation-synthesis mismatch.
+* Loops and generate → scalable design, simulation consistent.
+
+---
+
+## Author
+
+**Hirdesh** 
+**JSS NOIDA 4th year**
+@hirdeshpamani2@gmail.com
+
+
+---
+
+## Acknowledgment
+
+Special thanks to **Kunal Ghosh** of **VSD** for guidance and support throughout the workshop.
 
 ---
 
